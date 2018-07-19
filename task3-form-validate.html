@@ -1,0 +1,42 @@
+<!-- Task 3 : Input forms with validation -->
+
+<html>
+<head>
+<title>Task 3</title>
+<link rel="stylesheet" href="css/form-validate.css">
+</head>
+<body>
+  <form>
+    <div class="form-group">
+      <label for="firstname">First name</label><span id="firstnameSpan"></span>
+      <input type="string" class="form-control" id="firstname" placeholder="First name">
+    </div>
+    <div class="form-group">
+      <label for="lastname">Last name</label><span id="lastnameSpan"></span>
+      <input type="string" class="form-control" id="lastname" placeholder="Last name">
+    </div>
+    <div class="form-group">
+      <label for="egn">EGN</label><span id="egnSpan"></span>
+      <input type="string" class="form-control" id="egn" placeholder="8104187583">
+    </div>
+    <div class="form-group">
+      <label for="age">Your age</label><span id="ageSpan"></span>
+      <input type="number" class="form-control" id="age" min="18" max="118" placeholder="18">
+    </div>
+    <div class="form-group">
+      <label for="password">Password</label><span id="passwordSpan"></span>
+      <input type="password" class="form-control" id="password">
+    </div>
+    <div class="form-group">
+      <label for="confirm">Confirm password</label><span id="confirmSpan"></span>
+      <input type="password" class="form-control" id="confirm">
+    </div>
+    <div class="form-group">
+      <label for="address">Your address</label><span id="addressSpan"></span>
+      <textarea type="string" class="form-control" id="address" placeholder="Address here" rows="10" cols="30"></textarea>
+    </div>
+    <button type="button" onclick="checkInput()">Submit</button>
+  </form>
+</body>
+<script type="text/javascript" src="js/form-validate.js"></script>
+</html>
